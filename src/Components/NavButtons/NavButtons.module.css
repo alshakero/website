@@ -1,0 +1,38 @@
+.navButtonsWrapper {
+    position: absolute;
+    bottom: 5em;
+    left: 2em;
+    height: 20px;
+}
+@media (max-width: 500px) {
+    .navButtonsWrapper {
+        bottom: 0em;
+    }
+}
+.navButtonsWrapper h3 {
+    margin: 0;
+    margin-bottom: -10px;
+    color: #eee;
+}
+.navButtonsWrapper a {
+    font-size: calc(32px + (34 - 32) * (100vw - 400px) / (800 - 400));
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+}
+.navButtonsWrapper span:hover {
+    color: lightcoral;
+}
+.navButtonsWrapper a[data-current='true'] {
+    color: lightgreen;
+    pointer-events: none;
+}
+.navArrow {
+    display: inline-block;
+    color: #fff;
+    vertical-align: middle;
+    font-size: 2em;
+    line-height: 1em;
+    padding: 0.4em 0.2em;
+    padding-top: 0;
+}

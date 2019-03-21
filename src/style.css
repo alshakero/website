@@ -1,0 +1,36 @@
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    font-family: 'Josefin Slab', serif;
+}
+@media (max-width: 1200px) {
+    html {
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 720px) {
+    html {
+        font-size: 0.5em;
+    }
+}
+@media (max-width: 300px) {
+    html {
+        font-size: 0.3em;
+    }
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    text-decoration: none;
+    color: lightgreen;
+}
+p {
+    margin: 0;
+}
+h1, h2, h3, h4 {
+    margin-top: 2%
+}

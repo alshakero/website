@@ -1,0 +1,27 @@
+.carousel {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    will-change: padding;
+    min-height: 500px;
+}
+.carousel[data-transitioning='true'] {
+    animation: shrinkAndBack 1.8s ease-in-out forwards;
+}
+@keyframes shrinkAndBack {
+    0% {
+        padding: 1rem;
+    }
+    20% {
+        padding: 1.5rem;
+    }
+    80% {
+        padding: 1.5rem;
+    }
+    100% {
+        padding: 1rem;
+    }
+}

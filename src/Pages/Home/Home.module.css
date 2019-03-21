@@ -1,0 +1,86 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.layer {
+    grid-area: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+    max-height: 100%;
+    height: 100%;
+}
+.nameSVG {
+    width: 100%;
+    max-width: 1500px;
+    min-width: 700px;
+}
+.animatedText {
+    fill: white;
+    font-size: 24pt;
+    font-weight: 100;
+    opacity: 0;
+    animation: appear 500ms ease-in forwards;
+    animation-delay: 400ms;
+}
+
+@keyframes appear {
+    100% {
+        opacity: 1;
+    }
+}
+.details {
+    margin-top: 9rem;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    animation: moveaway 0.8s ease-in-out 5.7s forwards;
+}
+.details > div {
+    margin: 1rem;
+}
+
+.details > div a {
+    display: inline-block;
+    margin: 1rem;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.detailsText {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.skewUp,
+.skewLeft,
+.skewRight {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+.skewUp:hover {
+    transform: perspective(100px) rotateX(-10deg);
+}
+.skewLeft:hover .detailsText {
+    transform: skew(10deg);
+}
+.skewRight:hover .detailsText {
+    transform: skewX(-10deg);
+}
+@keyframes moveaway {
+    100% {
+        margin-top: 12rem;
+    }
+}
+.seperatorCircle {
+    color: lightgreen;
+    cursor: default;
+}
+.navigationGrid {
+    display: grid;
+    width: 100%;
+}

@@ -1,0 +1,95 @@
+.paddingWrapper {
+    white-space: normal;
+    max-height: 100%;
+    height: 100%;
+}
+.sideBySide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+@media (max-width: 500px) {
+    .sideBySide {
+        display: block;
+        padding: 2em;
+        padding-bottom: 5em;
+    }
+    .sideBySide h1 {
+        font-size: 1em;
+    }
+}
+
+.profilePicture img {
+    border-radius: 50%;
+    border-bottom-right-radius: 0;
+    width: 500px;
+    max-width: 100%;
+    filter: grayscale(100%) sepia(90%) hue-rotate(60deg) saturate(300%)
+        contrast(0.7);
+    transition: all 0.5s ease-in-out;
+}
+.profilePicture img:hover {
+    border-radius: 50%;
+    border-bottom-right-radius: 0;
+    width: 500px;
+    max-width: 100%;
+    filter: none;
+}
+.profilePicture {
+    width: 30%;
+    max-width: 30rem;
+    min-width: 10rem;
+}
+.contactInfo {
+    display: inline-block;
+    font-size: 2.5rem;
+    width: 30%;
+    color: #fff;
+    padding: 2%;
+    min-width: 300px;
+    text-align: left;
+    vertical-align: middle;
+}
+.contactInfo span:not([role='img']) {
+    display: block;
+    font-size: 1.5rem;
+}
+.contactInfo p {
+    margin: 0;
+    grid-column-start: 2;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: lightgreen;
+}
+.emailSvg {
+    max-width: 80%;
+    cursor: pointer;
+}
+.emailSvg g {
+    transition: transform 0.5s ease-in-out;
+}
+.emailSvg .checkmark {
+    fill: lightgreen;
+    transform-origin: 10px -25px;
+}
+.emailSvg[data-is-copying='0']:hover > g {
+    transform: translateY(-51px);
+}
+.emailSvg[data-is-copying='1'] > g {
+    transform: translateY(52px);
+}
+.emailSvg[data-is-copying='1'] .checkmark {
+    fill: red;
+    transform: rotate(0deg) scale(0);
+    animation: rotate 1s ease-in-out forwards;
+}
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg) scale(1);
+        fill: lightgreen;
+    }
+}
+.goHome {
+    margin-top: 10%;
+}
