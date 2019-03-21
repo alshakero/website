@@ -52,7 +52,7 @@ export default function Websites() {
                                 hananosman.com
                             </a>
                             <span> — </span>A personal website for Hanan Osman.
-                            An Syrian architect residing in Warsaw, Poland. It
+                            A Syrian architect residing in Warsaw, Poland. It
                             has a{' '}
                             <a
                                 href="http://www.hananosman.com/airport-pre.php"
