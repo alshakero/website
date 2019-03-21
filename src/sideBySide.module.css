@@ -38,6 +38,7 @@
     min-width: 20rem;
     font-size: 2.5rem;
     color: #fff;
+    word-break: break-all
 }
 .paddedList {
     padding: 1%;
