@@ -20,9 +20,9 @@ export default {
     },
     '/': {
         title: 'Omar Alshaker - Home',
-        Page() {
+        Page({ style }) {
             return (
-                <Sheet>
+                <Sheet style={style}>
                     <Home />
                 </Sheet>
             );
@@ -38,9 +38,9 @@ export default {
         )
     },
     '/about': {
-        Page() {
+        Page({ style }) {
             return (
-                <Sheet>
+                <Sheet style={style}>
                     <About />
                 </Sheet>
             );
@@ -48,20 +48,20 @@ export default {
         title: 'About Me'
     },
     '/projects': {
-        Page() {
+        Page({ style }) {
             return (
-                <Sheet>
+                <Sheet style={style}>
                     <Projects />
                 </Sheet>
             );
         },
         title: 'Projects I Maintain'
     },
-    
+
     '/websites': {
-        Page() {
+        Page({ style }) {
             return (
-                <Sheet>
+                <Sheet style={style}>
                     <Websites />
                 </Sheet>
             );
@@ -71,9 +71,9 @@ export default {
     },
 
     '/expirements': {
-        Page() {
+        Page({ style }) {
             return (
-                <Sheet>
+                <Sheet style={style}>
                     <Experiments />
                 </Sheet>
             );
@@ -81,5 +81,4 @@ export default {
 
         title: 'Experiments for Fun'
     }
-    
 };

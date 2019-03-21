@@ -6,11 +6,11 @@
     margin: 0 1rem;
     vertical-align: top;
 }
-.page:first-of-type {
+
+.page:first-child {
     margin-left: 0;
-    transition: margin-left 1s ease-in-out 0.5s;
 }
+
 .page:last-of-type {
     margin-right: 0;
 }
-

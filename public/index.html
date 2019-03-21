@@ -4,13 +4,21 @@
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <!--[if IE]>
+      <p style="margin: 20px; font-size: 1.2em; font-family: 'Courier New', Courier, monospace">
+        Sorry! This website's visitors are mostly developers. I didn't put much effort into supporting such an old browser :(
+      </p>
+    <![endif]-->
     <meta name="theme-color" content="#000000" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet" />
+    <!--[!if IE]>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet" />
+    <![endif]-->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.

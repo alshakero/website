@@ -1,8 +1,9 @@
 import React from 'react';
-import {nameSVG, animatedText} from './Home.module.css';
+import { nameSVG, animatedText, unAnimatedText } from './Home.module.css';
+import { SMILAvailable } from '../../utils';
 
 export default function AnimatedName() {
-    return (
+    return SMILAvailable() ? (
         <svg
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -40,5 +41,7 @@ export default function AnimatedName() {
                 </textPath>
             </text>
         </svg>
+    ) : (
+        <h1 className={unAnimatedText}>Omar Alshaker</h1>
     );
 }

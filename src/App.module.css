@@ -4,24 +4,29 @@
     padding: 1rem;
     box-sizing: border-box;
     overflow: hidden;
-    white-space: nowrap;
-    will-change: padding;
     min-height: 500px;
+}
+.slidingChild {
+    white-space: nowrap;
+    height: 100%;
+    transform: translateX(0);
+    transition: transform 1s ease-in-out 0.5s;
+    will-change: transform;
 }
 .carousel[data-transitioning='true'] {
     animation: shrinkAndBack 1.8s ease-in-out forwards;
 }
 @keyframes shrinkAndBack {
     0% {
-        padding: 1rem;
+        transform: scale(1);
     }
     20% {
-        padding: 1.5rem;
+        transform: scale(0.98);
     }
     80% {
-        padding: 1.5rem;
+        transform: scale(0.98);
     }
     100% {
-        padding: 1rem;
+        transform: scale(1);
     }
 }

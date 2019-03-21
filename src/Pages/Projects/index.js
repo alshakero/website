@@ -4,9 +4,9 @@ import {
     title,
     paddingWrapper,
     theRightSideList,
-    skewRight,
     paddedList
 } from '../../sideBySide.module.css';
+import { skewRight } from '../../generics.module.css';
 import { Link } from 'react-router-dom';
 
 export default function Projects() {
@@ -68,7 +68,7 @@ export default function Projects() {
                                     role="img"
                                     aria-label="Discontinued"
                                 >
-                                    ⚠️
+                                    ⚠️&nbsp;
                                 </span>
                                 <a
                                     href="https://github.com/alshakero/ez-s"
@@ -100,7 +100,7 @@ export default function Projects() {
                                     role="img"
                                     aria-label="Unmaintained"
                                 >
-                                    ⚠️
+                                    ⚠️&nbsp;
                                 </span>
                                 <a
                                     href="https://perf.zone/"

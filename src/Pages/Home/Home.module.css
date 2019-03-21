@@ -32,6 +32,24 @@
         opacity: 1;
     }
 }
+
+.detailsEdge {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+}
+.detailsEdge > div {
+    margin: 1rem;
+}
+
+.detailsEdge > div a {
+    display: inline-block;
+    margin: 1rem;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+
 .details {
     margin-top: 9rem;
     text-align: center;
@@ -83,4 +101,8 @@
 .navigationGrid {
     display: grid;
     width: 100%;
+}
+.unAnimatedText {
+    color: #fff;
+    font-size: 5rem;
 }

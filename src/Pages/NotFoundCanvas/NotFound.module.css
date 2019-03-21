@@ -1,0 +1,35 @@
+.wrapper {
+    display: grid;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.wrapper > * {
+    grid-area: 1 / 1;
+    width: min-content;
+}
+.wrapper > canvas {
+    z-index: 0;
+}
+
+.wrapper > div {
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wrapper > h1 {
+    color: #fff;
+    font-size: 3rem;
+    padding: 10px;
+    background: #000;
+    margin: 0!important;
+    margin-bottom: -5em;
+    line-height: 1em;
+    padding-top: 0.33em;
+    vertical-align: middle;
+    transform: skew(-15deg);
+}
