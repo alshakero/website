@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    height: 100%;
 }
 .layer {
     grid-area: 1 / 1;
@@ -38,13 +39,9 @@
     color: #fff;
     font-size: 2rem;
 }
-.detailsEdge > div {
-    margin: 1rem;
-}
 
 .detailsEdge > div a {
     display: inline-block;
-    margin: 1rem;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
 }
@@ -58,12 +55,10 @@
     animation: moveaway 0.8s ease-in-out 5.7s forwards;
 }
 .details > div {
-    margin: 1rem;
 }
 
 .details > div a {
     display: inline-block;
-    margin: 1rem;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
 }
@@ -105,4 +100,13 @@
 .unAnimatedText {
     color: #fff;
     font-size: 5rem;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.navigation > div {
+    margin: 0.5em
 }

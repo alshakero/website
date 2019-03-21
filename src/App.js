@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { carousel, slidingChild } from './App.module.css';
 import { Router } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
@@ -38,8 +38,20 @@ function firstPageMargin(pageNumber = 0) {
 
 export default function App() {
     const [transitioning, setTransitioning] = useState(false);
+    const [resizeTrigger, setResizeTrigger] = useState(0);
     transitioningMarker = setTransitioning;
     const pageNumber = routesPathNames.indexOf(window.location.pathname);
+
+    useEffect(() => {
+        const resizer = () => {
+            setResizeTrigger(resizeTrigger + 1);
+        };
+        window.addEventListener('resize', resizer);
+        
+        return () => {
+            window.removeEventListener('resize', resizer);
+        }
+    })
 
     return (
         <Router history={history}>

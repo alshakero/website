@@ -47,7 +47,7 @@ export default function NotFoundCanvas() {
             canvas.height = rect.height;
 
             centerx = window.innerWidth / 2;
-            let centery = window.innerHeight / 2;
+            centery = window.innerHeight / 2;
         };
         windowResize();
 
