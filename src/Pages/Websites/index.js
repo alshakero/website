@@ -22,7 +22,11 @@ export default function Websites() {
                 <div className={theRightSideList}>
                     <ul className={paddedList}>
                         <li>
-                            <a href="https://www.360toolkit.co/" rel="noopener noreferrer" target="_blank">
+                            <a
+                                href="https://www.360toolkit.co/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                            >
                                 360toolkit.co
                             </a>
                             <span> — </span>A rich toolkit that helps you
@@ -34,7 +38,11 @@ export default function Websites() {
                             a quite niche & frusturating problem).
                         </li>
                         <li>
-                            <a href="https://zgps.live/" rel="noopener noreferrer" target="_blank">
+                            <a
+                                href="https://zgps.live/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                            >
                                 ZGPS
                             </a>
                             <span> — </span>
@@ -45,10 +53,14 @@ export default function Websites() {
                             reports. I'm responsible for the frontend of the
                             project. Working with three good friends and we're
                             trying to compete with huge veteran companies in
-                            this field, so close to succeed. Built with React.
+                            this field, so close to succeeding. Built with React.
                         </li>
                         <li>
-                            <a href="http://www.hananosman.com/" rel="noopener noreferrer" target="_blank">
+                            <a
+                                href="http://www.hananosman.com/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                            >
                                 hananosman.com
                             </a>
                             <span> — </span>A personal website for Hanan Osman.
@@ -72,7 +84,11 @@ export default function Websites() {
                             .
                         </li>
                         <li>
-                            <a href="https://syr-res.com" rel="noopener noreferrer" target="_blank">
+                            <a
+                                href="https://syr-res.com"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                            >
                                 Syrian Researchers{' '}
                                 <span className={badge}>Arabic</span>
                             </a>
@@ -84,8 +100,8 @@ export default function Websites() {
                             PHP and CodeIgniter, the website is single-person
                             effort. But the material is created by more than 500
                             amazing science-enthusiastic mostly Syrian young
-                            inspiring people. The website is in Arabic but the
-                            there is an
+                            inspiring people. The website is in Arabic but there
+                            is an
                             <a
                                 href="https://syr-res.com/about/english.html"
                                 rel="noopener noreferrer"

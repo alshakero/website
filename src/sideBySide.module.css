@@ -18,9 +18,6 @@
         padding: 0;
     }
 }
-.sideBySide :first-child {
-    flex: 0.3;
-}
 .sideBySide :nth-child(2) {
     flex: 1;
 }
@@ -35,10 +32,8 @@
     }
 }
 .title {
-    min-width: 20rem;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #fff;
-    word-break: break-all
 }
 .paddedList {
     padding: 1%;
