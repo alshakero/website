@@ -33,31 +33,22 @@ history.listen(() => {
 });
 
 function firstPageMargin(pageNumber = 0) {
-    return { transform: `translateX(-${pageNumber * window.innerWidth}px)` };
+    return { transform: `translateX(-${pageNumber * 100}vw)` };
 }
 
 export default function App() {
     const [transitioning, setTransitioning] = useState(false);
-    const [resizeTrigger, setResizeTrigger] = useState(0);
     transitioningMarker = setTransitioning;
     const pageNumber = routesPathNames.indexOf(window.location.pathname);
-
-    useEffect(() => {
-        const resizer = () => {
-            setResizeTrigger(resizeTrigger + 1);
-        };
-        window.addEventListener('resize', resizer);
-        
-        return () => {
-            window.removeEventListener('resize', resizer);
-        }
-    })
 
     return (
         <Router history={history}>
             <>
                 <div className={carousel} data-transitioning={transitioning}>
-                    <div className={slidingChild} style={firstPageMargin(pageNumber)}>
+                    <div
+                        className={slidingChild}
+                        style={firstPageMargin(pageNumber)}
+                    >
                         {RoutesMap[window.location.pathname] ? (
                             routes.map(({ Page }) => <Page />)
                         ) : (
